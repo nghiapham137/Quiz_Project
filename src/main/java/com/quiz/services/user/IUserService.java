@@ -1,4 +1,4 @@
-package com.quiz.services;
+package com.quiz.services.user;
 
 public interface IUserService {
 }

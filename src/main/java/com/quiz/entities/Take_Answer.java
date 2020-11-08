@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
-public class Take_answer {
+public class Take_Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,3 +21,7 @@ public class Take_answer {
     private Question_Answer question_answer;
 
 }
+
+
+
+
