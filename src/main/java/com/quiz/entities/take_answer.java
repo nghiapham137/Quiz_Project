@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
-public class take_answer {
+public class Take_answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,7 +16,7 @@ public class take_answer {
     @Column(columnDefinition = "TEXT")
     private String content;
     @ManyToOne
-    private take take;
+    private Take take;
     @ManyToOne
     private Question_Answer question_answer;
 

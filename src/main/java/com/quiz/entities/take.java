@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
-public class take {
+public class Take {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,7 +18,7 @@ public class take {
     private Timestamp startedAt;
     private Timestamp finishedAt;
     @ManyToOne
-    private User user;
+    private App_User appUser;
     @ManyToOne
     private Exam exam;
 }

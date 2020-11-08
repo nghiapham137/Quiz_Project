@@ -27,5 +27,5 @@ public class Question {
     @JoinTable(name = "exam_question", joinColumns = @JoinColumn(name = "question_id"), inverseJoinColumns = @JoinColumn(name = "exam_id"))
     private Collection<Exam> exams;
     @ManyToOne
-    private Category category;
+    private App_Subject appSubject;
 }
