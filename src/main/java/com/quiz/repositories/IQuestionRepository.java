@@ -1,6 +1,7 @@
 package com.quiz.repositories;
 
 import com.quiz.entities.Question;
+<<<<<<< HEAD
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -20,4 +21,9 @@ public interface IQuestionRepository extends PagingAndSortingRepository<Question
     Page<Question> findAllByLevel(int level,Pageable pageable);
 
     Page<Question> findAllByIsActive(boolean isActive,Pageable pageable);
+=======
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface IQuestionRepository extends PagingAndSortingRepository<Question, Long> {
+>>>>>>> ff6196f588206159fe3150d4681008d2314d8060
 }
