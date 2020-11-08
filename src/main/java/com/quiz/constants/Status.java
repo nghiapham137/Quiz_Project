@@ -42,5 +42,4 @@ public enum Status {
                 return UNKNOWN.status;
         }
     }
-
 }
