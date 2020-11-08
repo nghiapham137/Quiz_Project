@@ -19,7 +19,6 @@ public class User {
     private int age;
     private String address;
     private String email;
-    private Integer role;
     @Column(columnDefinition = "TEXT")
     private String image;
     private Timestamp createAt;
@@ -28,6 +27,8 @@ public class User {
     private Group group;
     @Transient
     private MultipartFile avatar;
+    @ManyToOne
+    private User_Role user_role;
 
 
 
