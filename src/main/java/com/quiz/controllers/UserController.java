@@ -1,6 +1,7 @@
 package com.quiz.controllers;
 
 import com.quiz.entities.App_User;
+import com.quiz.services.IUserService;
 import com.quiz.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
     @Autowired
-    private UserServiceImpl service;
+    private IUserService service;
 
 
     @PostMapping(value = "/create",produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
