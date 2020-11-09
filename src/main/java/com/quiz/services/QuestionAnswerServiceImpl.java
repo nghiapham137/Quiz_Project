@@ -1,6 +1,6 @@
 package com.quiz.services;
 
-import com.quiz.entities.Question_Answer;
+import com.quiz.entities.QuestionAnswer;
 import com.quiz.repositories.IQuestionAnswerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ public class QuestionAnswerServiceImpl implements IQuestionAnswerService {
     @Autowired
     private IQuestionAnswerRepository questionAnswerRepository;
     @Override
-    public Iterable<Question_Answer> findAll() {
+    public Iterable<QuestionAnswer> findAll() {
         return questionAnswerRepository.findAll();
     }
 }

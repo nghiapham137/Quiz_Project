@@ -1,7 +1,7 @@
 package com.quiz.repositories;
 
-import com.quiz.entities.Question_Answer;
+import com.quiz.entities.QuestionAnswer;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface IQuestionAnswerRepository extends PagingAndSortingRepository<Question_Answer, Long> {
+public interface IQuestionAnswerRepository extends PagingAndSortingRepository<QuestionAnswer, Long> {
 }

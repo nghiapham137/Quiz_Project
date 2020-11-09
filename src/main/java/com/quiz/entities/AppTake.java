@@ -7,17 +7,18 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
-public class Take_answer {
+public class AppTake {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Integer status;
+    private int score;
     private Timestamp createdAt;
     private Timestamp updatedAt;
-    @Column(columnDefinition = "TEXT")
-    private String content;
+    private Timestamp startedAt;
+    private Timestamp finishedAt;
     @ManyToOne
-    private Take take;
+    private AppUser appUser;
     @ManyToOne
-    private Question_Answer question_answer;
-
+    private Exam exam;
 }

@@ -5,11 +5,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Date;
 
 @Entity
 @Data
-public class App_User {
+public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,11 +23,11 @@ public class App_User {
     private Timestamp createAt;
     private Timestamp dob;
     @ManyToOne
-    private Group group;
+    private UserGroup userGroup;
     @Transient
     private MultipartFile avatar;
     @ManyToOne
-    private User_Role user_role;
+    private UserRole user_role;
 
 
 

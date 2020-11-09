@@ -1,7 +1,7 @@
 package com.quiz.controllers;
 
 import com.quiz.entities.Question;
-import com.quiz.entities.Question_Answer;
+import com.quiz.entities.QuestionAnswer;
 import com.quiz.services.IQuestionAnswerService;
 import com.quiz.services.IQuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/questions")
@@ -21,7 +19,7 @@ public class QuestionController {
     private IQuestionAnswerService questionAnswerService;
 
     @ModelAttribute("questionAnswers")
-    private Iterable<Question_Answer> findAll() {
+    private Iterable<QuestionAnswer> findAll() {
         return questionAnswerService.findAll();
     }
 

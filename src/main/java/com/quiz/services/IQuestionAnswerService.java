@@ -1,7 +1,7 @@
 package com.quiz.services;
 
-import com.quiz.entities.Question_Answer;
+import com.quiz.entities.QuestionAnswer;
 
 public interface IQuestionAnswerService {
-    Iterable<Question_Answer> findAll();
+    Iterable<QuestionAnswer> findAll();
 }

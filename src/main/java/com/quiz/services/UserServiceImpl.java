@@ -1,6 +1,6 @@
 package com.quiz.services;
 
-import com.quiz.entities.App_User;
+import com.quiz.entities.AppUser;
 import com.quiz.repositories.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,17 +13,17 @@ public class UserServiceImpl implements IUserService {
     private IUserRepository userRepository;
 
     @Override
-    public App_User save(App_User user) {
+    public AppUser save(AppUser user) {
         return userRepository.save(user);
     }
 
     @Override
-    public Iterable<App_User> findAll() {
+    public Iterable<AppUser> findAll() {
         return userRepository.findAll();
     }
 
     @Override
-    public Optional<App_User> findById(Long id) {
+    public Optional<AppUser> findById(Long id) {
         return userRepository.findById(id);
     }
 }

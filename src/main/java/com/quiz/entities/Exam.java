@@ -1,12 +1,9 @@
 package com.quiz.entities;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Collection;
 
 @Entity
 @Data
@@ -23,6 +20,6 @@ public class Exam {
     private Timestamp createdAt;
     private Timestamp updatedAt;
     @ManyToOne
-    private Group group;
+    private UserGroup userGroup;
 
 }

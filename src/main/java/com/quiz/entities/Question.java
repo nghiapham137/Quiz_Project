@@ -1,12 +1,9 @@
 package com.quiz.entities;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Collection;
 
 @Entity
 @Data
@@ -22,5 +19,5 @@ public class Question {
     private Timestamp updatedAt;
     private boolean isActive;
     @ManyToOne
-    private App_Subject appSubject;
+    private AppSubject appSubject;
 }
