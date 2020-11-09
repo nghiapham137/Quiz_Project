@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/questions")
 public class QuestionController {
+
     @Autowired
     private QuestionService questionService;
+
     @Autowired
     private IQuestionAnswerService questionAnswerService;
 
