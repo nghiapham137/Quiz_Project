@@ -1,4 +1,4 @@
-package com.quiz.services;
+package com.quiz.services.questionAnswer;
 
 import com.quiz.entities.Question_Answer;
 

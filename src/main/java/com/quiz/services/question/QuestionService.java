@@ -4,6 +4,8 @@ import com.quiz.entities.Question;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.Optional;
+
 public interface QuestionService {
 
     Page<Question> findAll(Pageable pageable);
@@ -17,4 +19,10 @@ public interface QuestionService {
     Page<Question> findAllByLevel(int level,Pageable pageable);
 
     Page<Question> findAllByIsActive(boolean isActive,Pageable pageable);
+
+    Iterable<Question> findAll();
+
+    Optional<Question> findById(Long id);
+
+    Question save(Question question);
 }
