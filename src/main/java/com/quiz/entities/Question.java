@@ -21,11 +21,6 @@ public class Question {
     private Timestamp createdAt;
     private Timestamp updatedAt;
     private boolean isActive;
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-    @JoinTable(name = "exam_question", joinColumns = @JoinColumn(name = "question_id"), inverseJoinColumns = @JoinColumn(name = "exam_id"))
-    private Collection<Exam> exams;
     @ManyToOne
     private App_Subject appSubject;
 }

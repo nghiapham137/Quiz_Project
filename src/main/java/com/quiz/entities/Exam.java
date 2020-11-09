@@ -24,9 +24,5 @@ public class Exam {
     private Timestamp updatedAt;
     @ManyToOne
     private Group group;
-    @ManyToMany(mappedBy = "exams")
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-    private Collection<Question> questions;
 
 }

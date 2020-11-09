@@ -10,3 +10,5 @@ public interface IUserService {
     Iterable<App_User> findAll();
     Optional <App_User> findById(Long id);
 }
+import com.quiz.entities.Question;
+import org.springframework.beans.factory.annotation.Autowired;
